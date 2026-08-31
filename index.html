@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURIMAC™ | Industrial Mining Intelligence & Yield Optimization</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #07090E; }
+    h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
+    .gold-gradient { background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .gold-border { border-color: rgba(245, 158, 11, 0.25); }
+    .card-bg { background-color: rgba(17, 24, 39, 0.7); backdrop-filter: blur(12px); }
+  </style>
+</head>
+<body class="text-gray-200 antialiased min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
+
+  <!-- Header / Navigation -->
+  <header class="border-b border-gray-800/80 bg-[#07090E]/90 sticky top-0 z-50 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-bold tracking-wider font-heading text-white">AURIMAC<span class="text-amber-500">™</span></span>
+        <span class="hidden sm:inline-block text-xs uppercase tracking-widest px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 font-semibold border border-amber-500/20">Operations Research</span>
+      </div>
+      <div>
+        <a href="mailto:info@aurimac.com" class="text-xs font-semibold uppercase tracking-wider px-4 py-2.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-black transition-all shadow-lg shadow-amber-500/10">
+          Contact Engineering
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-6xl mx-auto px-6 py-20 flex-grow flex flex-col justify-center">
+    <div class="max-w-3xl space-y-6">
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-gray-900 border border-gray-800 text-xs text-gray-400">
+        <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+        <span>Offline-First Industrial Optimization Engine</span>
+      </div>
+      
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+        Heuristic Fuel & Gold Yield <span class="gold-gradient">Optimization.</span>
+      </h1>
+      
+      <p class="text-lg sm:text-xl text-gray-400 font-light leading-relaxed">
+        High-performance mathematical decision systems for alluvial and open-pit mining operations. 
+        Engineered for strict diesel rationing quotas and maximum gravimetric recovery.
+      </p>
+
+      <div class="pt-4 flex flex-wrap gap-4 text-xs text-gray-400 font-mono">
+        <div class="flex items-center space-x-2 bg-gray-900/80 px-3 py-1.5 rounded border border-gray-800">
+          <span class="text-amber-500">✓</span> <span>Zero-Cloud Dependency</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-gray-900/80 px-3 py-1.5 rounded border border-gray-800">
+          <span class="text-amber-500">✓</span> <span>100% Air-Gapped Edge Nodes</span>
+        </div>
+        <div class="flex items-center space-x-2 bg-gray-900/80 px-3 py-1.5 rounded border border-gray-800">
+          <span class="text-amber-500">✓</span> <span>SciPy HiGHS Solver</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Core Pillars -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
+      
+      <!-- Card 1 -->
+      <div class="card-bg p-8 rounded-xl border gold-border space-y-4 hover:border-amber-500/50 transition-all">
+        <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-sm">
+          01
+        </div>
+        <h3 class="text-lg font-bold text-white tracking-wide">Diesel Fleet Optimization (MILP)</h3>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Mixed-Integer Linear Programming algorithms to minimize specific fuel consumption (L/m³) under daily shift rationing constraints, eliminating shovel queueing bottlenecks.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-bg p-8 rounded-xl border gold-border space-y-4 hover:border-amber-500/50 transition-all">
+        <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-sm">
+          02
+        </div>
+        <h3 class="text-lg font-bold text-white tracking-wide">Hydrodynamic Tailings Shield</h3>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Piecewise recovery modeling to dynamically balance wash-plant pulp density, preventing fine gold losses in sluice and centrifugal tailings caused by overfeeding.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card-bg p-8 rounded-xl border gold-border space-y-4 hover:border-amber-500/50 transition-all">
+        <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-sm">
+          03
+        </div>
+        <h3 class="text-lg font-bold text-white tracking-wide">Air-Gapped Industrial Nodes</h3>
+        <p class="text-sm text-gray-400 leading-relaxed">
+          Fully containerized on-premises edge computing architecture engineered for remote mining camps operating without satellite or cellular internet.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Institutional Deployment Notice -->
+    <div class="mt-16 p-6 rounded-xl bg-gray-900/60 border border-gray-800 text-xs sm:text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+      <div>
+        <span class="font-semibold text-white uppercase tracking-wider block sm:inline">Deployment Notice:</span>
+        AURIMAC™ is deployed exclusively via on-premises edge appliances and specialized industrial engineering audits.
+      </div>
+      <a href="mailto:info@aurimac.com" class="text-amber-400 hover:text-amber-300 font-semibold whitespace-nowrap">
+        Request Technical Audit &rarr;
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-900 bg-[#04060A] py-8">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+      <div>
+        © 2026 AURIMAC™ Engine. All rights reserved. Santa Cruz de la Sierra — La Paz, Bolivia.
+      </div>
+      <div class="flex space-x-6 font-mono">
+        <span>info@aurimac.com</span>
+        <span>cribera@aurimac.com</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
