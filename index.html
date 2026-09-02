@@ -17,7 +17,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <style>
-    body { font-family: 'Inter', sans-serif; background-color: #07090E; }
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: #07090E; 
+      background-image: radial-gradient(circle at 20% 15%, rgba(37, 99, 235, 0.08) 0%, rgba(7, 9, 14, 1) 60%),
+                        radial-gradient(circle at 80% 80%, rgba(245, 158, 11, 0.04) 0%, rgba(7, 9, 14, 1) 50%);
+    }
     h1, h2, h3, .font-heading { font-family: 'Space Grotesk', sans-serif; }
     .gold-gradient { 
       background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%); 
@@ -29,8 +34,10 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    .gold-border { border-color: rgba(245, 158, 11, 0.2); }
-    .card-bg { background-color: rgba(17, 24, 39, 0.65); backdrop-filter: blur(12px); }
+    .card-bg { 
+      background-color: rgba(17, 24, 39, 0.65); 
+      backdrop-filter: blur(12px); 
+    }
   </style>
 </head>
 <body class="text-gray-200 antialiased min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
@@ -88,7 +95,7 @@
         
         <p id="hero-p" class="text-base sm:text-lg text-gray-300 font-light leading-relaxed max-w-2xl">
           High-performance quantitative decision systems for alluvial and open-pit mining operations. 
-          Engineered for strict diesel rationing quotas and maximum gravimetric recovery.
+          Built on linear algebra, physical mass-balance rules, and strict diesel rationing quotas.
         </p>
 
         <!-- Technical Checkmarks -->
@@ -100,7 +107,7 @@
             <span class="text-blue-400 font-bold">✓</span> <span id="check-2">100% Air-Gapped Edge Nodes</span>
           </div>
           <div class="flex items-center space-x-2 bg-gray-900/80 px-3 py-1.5 rounded-md border border-gray-800">
-            <span class="text-amber-500 font-bold">✓</span> <span id="check-3">High-Speed Deterministic Solver</span>
+            <span class="text-amber-500 font-bold">✓</span> <span id="check-3">Deterministic Math Engine</span>
           </div>
         </div>
 
@@ -120,40 +127,109 @@
 
     </div>
 
-    <!-- 3 Core Strategic Pillars -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16 lg:mt-24">
+    <!-- 6-Card Enterprise Capabilities Matrix (2 Rows of 3 Cards) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 lg:mt-24">
       
-      <!-- Card 1 -->
-      <div class="card-bg p-8 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-        <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-sm">
-          01
+      <!-- Card 01: Fleet & Fuel Optimization -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs font-mono">
+            01
+          </div>
+          <h3 id="card1-title" class="text-base font-bold text-white tracking-wide">Fleet & Fuel Optimization</h3>
+          <p id="card1-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Mathematical dispatch algorithms utilizing Linear Algebra and MILP models to minimize specific fuel consumption (L/m³) under daily shift rationing, eliminating shovel queueing.
+          </p>
         </div>
-        <h3 id="card1-title" class="text-lg font-bold text-white tracking-wide">Diesel Fleet Optimization</h3>
-        <p id="card1-desc" class="text-sm text-gray-400 leading-relaxed">
-          Mixed-Integer Linear Programming (MILP) dispatch algorithms to minimize specific fuel consumption (L/m³) under daily shift rationing, eliminating shovel queueing bottlenecks.
-        </p>
+        <div class="pt-2 text-[11px] font-mono text-blue-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Linear Algebra / MILP</span>
+          <span>min cᵀx</span>
+        </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="card-bg p-8 rounded-xl border gold-border space-y-4 hover:border-amber-500/50 hover:shadow-xl hover:shadow-amber-500/5 transition-all">
-        <div class="w-10 h-10 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-sm">
-          02
+      <!-- Card 02: Hydrodynamic Tailings Shield -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-amber-500/40 hover:shadow-xl hover:shadow-amber-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-xs font-mono">
+            02
+          </div>
+          <h3 id="card2-title" class="text-base font-bold text-white tracking-wide">Hydrodynamic Tailings Shield</h3>
+          <p id="card2-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Gravimetric recovery modeling based on Stokes Law fluid mechanics to dynamically balance wash-plant pulp density, preventing fine gold losses in sluice tailings.
+          </p>
         </div>
-        <h3 id="card2-title" class="text-lg font-bold text-white tracking-wide">Hydrodynamic Tailings Shield</h3>
-        <p id="card2-desc" class="text-sm text-gray-400 leading-relaxed">
-          Piecewise recovery modeling (Stokes Law) to dynamically balance wash-plant pulp density, preventing fine gold losses in sluice and centrifugal tailings caused by overfeeding.
-        </p>
+        <div class="pt-2 text-[11px] font-mono text-amber-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Stokes Law / SOS2</span>
+          <span>R(F) Equilibrium</span>
+        </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="card-bg p-8 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all">
-        <div class="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-sm">
-          03
+      <!-- Card 03: Fuel Audit & Discrepancy Detection -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs font-mono">
+            03
+          </div>
+          <h3 id="card3-title" class="text-base font-bold text-white tracking-wide">Fuel Audit & Discrepancy Detection</h3>
+          <p id="card3-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Cross-reconciliation between thermodynamic kinematic consumption and fuel pump logs to instantly isolate operational deviations, line leaks, and unaccounted fuel loss.
+          </p>
         </div>
-        <h3 id="card3-title" class="text-lg font-bold text-white tracking-wide">Air-Gapped Industrial Nodes</h3>
-        <p id="card3-desc" class="text-sm text-gray-400 leading-relaxed">
-          Fully containerized on-premises edge computing architecture engineered for remote mining camps operating without satellite or cellular internet.
-        </p>
+        <div class="pt-2 text-[11px] font-mono text-blue-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Audit Ledger</span>
+          <span>Δ Theoretical vs Real</span>
+        </div>
+      </div>
+
+      <!-- Card 04: Air-Gapped Industrial Nodes -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs font-mono">
+            04
+          </div>
+          <h3 id="card4-title" class="text-base font-bold text-white tracking-wide">Air-Gapped Industrial Nodes</h3>
+          <p id="card4-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Self-contained on-premises edge computing architecture running in hardened containers, engineered for isolated mining camps operating without satellite or cellular internet.
+          </p>
+        </div>
+        <div class="pt-2 text-[11px] font-mono text-blue-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Docker Edge Node</span>
+          <span>100% Offline Ready</span>
+        </div>
+      </div>
+
+      <!-- Card 05: Expert Systems for Alluvial Mining -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-amber-500/40 hover:shadow-xl hover:shadow-amber-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 font-bold text-xs font-mono">
+            05
+          </div>
+          <h3 id="card5-title" class="text-base font-bold text-white tracking-wide">Expert Systems for Alluvial Mining</h3>
+          <p id="card5-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Deterministic physical decision logic incorporating alluvial swell factors, rolling resistance in muddy haul roads, and equipment mechanical availability bounds.
+          </p>
+        </div>
+        <div class="pt-2 text-[11px] font-mono text-amber-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Domain Heuristics</span>
+          <span>Physics-Based Rules</span>
+        </div>
+      </div>
+
+      <!-- Card 06: Telemetry & Machine Learning Ready -->
+      <div class="card-bg p-7 rounded-xl border border-gray-800/80 space-y-4 hover:border-blue-500/40 hover:shadow-xl hover:shadow-blue-500/5 transition-all flex flex-col justify-between">
+        <div class="space-y-3">
+          <div class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs font-mono">
+            06
+          </div>
+          <h3 id="card6-title" class="text-base font-bold text-white tracking-wide">Telemetry & Machine Learning Ready</h3>
+          <p id="card6-desc" class="text-xs sm:text-sm text-gray-400 leading-relaxed font-light">
+            Industrial time-series spatial infrastructure architected to ingest high-frequency GPS telemetry and train localized Machine Learning models for behavioral anomaly detection.
+          </p>
+        </div>
+        <div class="pt-2 text-[11px] font-mono text-blue-400/80 border-t border-gray-800/60 flex items-center justify-between">
+          <span>Timescale & MobilityDB</span>
+          <span>ML-Ready Spatial Graph</span>
+        </div>
       </div>
 
     </div>
@@ -161,7 +237,7 @@
     <!-- Institutional Deployment Notice -->
     <div class="mt-12 p-6 rounded-xl bg-gray-900/60 border border-gray-800 text-xs sm:text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
       <div>
-        <span id="notice-title" class="font-semibold text-white uppercase tracking-wider block sm:inline">Deployment Notice:</span>
+        <span id="notice-title" class="font-semibold text-white uppercase tracking-wider block sm:inline">Deployment Notice: </span>
         <span id="notice-desc">AURIMAC™ is deployed exclusively via on-premises edge appliances and specialized industrial engineering audits.</span>
       </div>
       <a href="mailto:info@aurimac.com" id="notice-cta" class="text-amber-400 hover:text-amber-300 font-semibold whitespace-nowrap">
@@ -193,16 +269,22 @@
         hero_badge: "Offline-First Industrial Optimization Engine",
         hero_h1_pre: "Heuristic Fuel & Gold Yield",
         hero_h1_span: "Optimization.",
-        hero_p: "High-performance quantitative decision systems for alluvial and open-pit mining operations. Engineered for strict diesel rationing quotas and maximum gravimetric recovery.",
+        hero_p: "High-performance quantitative decision systems for alluvial and open-pit mining operations. Built on linear algebra, physical mass-balance rules, and strict diesel rationing quotas.",
         check_1: "Zero-Cloud Dependency",
         check_2: "100% Air-Gapped Edge Nodes",
-        check_3: "High-Speed Deterministic Solver",
-        card1_title: "Diesel Fleet Optimization",
-        card1_desc: "Mixed-Integer Linear Programming (MILP) dispatch algorithms to minimize specific fuel consumption (L/m³) under daily shift rationing, eliminating shovel queueing bottlenecks.",
+        check_3: "Deterministic Math Engine",
+        card1_title: "Fleet & Fuel Optimization",
+        card1_desc: "Mathematical dispatch algorithms utilizing Linear Algebra and MILP models to minimize specific fuel consumption (L/m³) under daily shift rationing, eliminating shovel queueing.",
         card2_title: "Hydrodynamic Tailings Shield",
-        card2_desc: "Piecewise recovery modeling (Stokes Law) to dynamically balance wash-plant pulp density, preventing fine gold losses in sluice and centrifugal tailings caused by overfeeding.",
-        card3_title: "Air-Gapped Industrial Nodes",
-        card3_desc: "Fully containerized on-premises edge computing architecture engineered for remote mining camps operating without satellite or cellular internet.",
+        card2_desc: "Gravimetric recovery modeling based on Stokes Law fluid mechanics to dynamically balance wash-plant pulp density, preventing fine gold losses in sluice tailings.",
+        card3_title: "Fuel Audit & Discrepancy Detection",
+        card3_desc: "Cross-reconciliation between thermodynamic kinematic consumption and fuel pump logs to instantly isolate operational deviations, line leaks, and unaccounted fuel loss.",
+        card4_title: "Air-Gapped Industrial Nodes",
+        card4_desc: "Self-contained on-premises edge computing architecture running in hardened containers, engineered for isolated mining camps operating without satellite or cellular internet.",
+        card5_title: "Expert Systems for Alluvial Mining",
+        card5_desc: "Deterministic physical decision logic incorporating alluvial swell factors, rolling resistance in muddy haul roads, and equipment mechanical availability bounds.",
+        card6_title: "Telemetry & Machine Learning Ready",
+        card6_desc: "Industrial time-series spatial infrastructure architected to ingest high-frequency GPS telemetry and train localized Machine Learning models for behavioral anomaly detection.",
         notice_title: "Deployment Notice: ",
         notice_desc: "AURIMAC™ is deployed exclusively via on-premises edge appliances and specialized industrial engineering audits.",
         notice_cta: "Request Technical Audit →"
@@ -213,16 +295,22 @@
         hero_badge: "Motor de Optimización Industrial Off-Grid",
         hero_h1_pre: "Optimización Heurística de Diésel y",
         hero_h1_span: "Rinde de Oro.",
-        hero_p: "Sistemas cuantitativos de alta precisión para operaciones mineras aluviales y de tajo abierto. Diseñados para cuotas estrictas de racionamiento de diésel y máxima recuperación gravimétrica.",
+        hero_p: "Sistemas cuantitativos de alta precisión para operaciones mineras aluviales y de tajo abierto. Construidos sobre álgebra lineal, balances físicos de masa y cuotas estrictas de diésel.",
         check_1: "Cero Dependencia de la Nube",
         check_2: "Nodos Industriales 100% Off-Grid",
-        check_3: "Solver Matemático Determinístico",
+        check_3: "Motor Matemático Determinístico",
         card1_title: "Optimización de Flota y Diésel",
-        card1_desc: "Algoritmos de despacho MILP para minimizar el consumo específico de combustible (L/m³) bajo cuotas diarias, eliminando cuellos de botella y colas en palas.",
-        card2_title: "Escudo de Recuperación en Colas",
-        card2_desc: "Modelado de sedimentación (Ley de Stokes) para balancear la densidad de pulpa en chanchas y trommels, evitando la fuga de oro fino a las colas por sobrealimentación.",
-        card3_title: "Nodos Locales Sin Internet",
-        card3_desc: "Arquitectura de cómputo en el borde (Edge Computing) en contenedores Docker, diseñada para operar en campamentos remotos sin señal satelital ni celular.",
+        card1_desc: "Algoritmos de despacho basados en Álgebra Lineal y modelos MILP para minimizar el consumo específico de combustible (L/m³) bajo cuotas diarias, eliminando colas en pala.",
+        card2_title: "Escudo de Rinde en Colas",
+        card2_desc: "Modelado gravimétrico basado en la mecánica de fluidos de la Ley de Stokes para balancear la densidad de pulpa en chanchas, evitando la fuga de oro fino a las colas.",
+        card3_title: "Auditoría de Combustible y Fugas",
+        card3_desc: "Conciliación cruzada entre el consumo cinemático teórico del tajo y el despacho real en surtidor para identificar de inmediato mermas, desvíos y consumos no justificados.",
+        card4_title: "Nodos Industriales Off-Grid",
+        card4_desc: "Arquitectura de cómputo local (Edge Computing) en contenedores Docker, diseñada para operar en campamentos aislados sin internet satelital ni señal celular.",
+        card5_title: "Sistemas Expertos para Minería",
+        card5_desc: "Lógica determinística que integra factores de esponjamiento de grava aluvial, resistencia a la rodadura en barro y disponibilidad mecánica real de los equipos.",
+        card6_title: "Base para Telemetría y Machine Learning",
+        card6_desc: "Infraestructura espacial de series de tiempo preparada para ingestar telemetría GPS continua y entrenar modelos locales de Machine Learning para detección de anomalías.",
         notice_title: "Aviso de Despliegue: ",
         notice_desc: "AURIMAC™ se instala exclusivamente mediante hardware industrial local y auditorías especializadas de ingeniería en planta.",
         notice_cta: "Solicitar Auditoría Técnica →"
@@ -233,16 +321,22 @@
         hero_badge: "离线工业级矿山智能运筹引擎",
         hero_h1_pre: "砂金重选回收率与柴油油耗",
         hero_h1_span: "运筹优化系统。",
-        hero_p: "专为露天砂金矿与水采作业设计的工业级定量决策系统。针对严格的柴油配额限制与微细粒金流失痛点，实现产出效益最大化。",
+        hero_p: "专为露天与水采砂金矿设计的工业级定量决策系统。基于线性代数运筹模型、物理质量平衡法则与严格柴油配额限制，实现综合效益最大化。",
         check_1: "零云端依赖 / 绝密私有",
         check_2: "100% 物理隔离边缘节点",
-        check_3: "毫秒级高精度确定性求解器",
+        check_3: "确定性数学求解器",
         card1_title: "车铲调度与柴油油耗优化",
-        card1_desc: "基于混合整数线性规划（MILP）的异构车队调度算法，在严格日燃油配额下实现单方油耗（L/m³）最小化，杜绝铲车空转与排队瓶颈。",
+        card1_desc: "结合线性代数与混合整数规划（MILP）的高效调度算法，在严格轮班燃油配额下实现单方油耗（L/m³）最小化，杜绝铲车等待与排队瓶颈。",
         card2_title: "洗选水动力学与尾矿防流失",
-        card2_desc: "应用斯托克斯流体沉降动力学分段模型，动态控制洗矿机矿浆浓度，彻底阻断因超负荷进料导致的微细粒金进入尾矿流失。",
-        card3_title: "离线边缘计算工业一体机",
-        card3_desc: "完全容器化的本地边缘计算架构，专为无卫星、无蜂窝网络的偏远热带雨林与安第斯矿区营地深度定制，开箱即用。",
+        card2_desc: "应用斯托克斯流体沉降动力学模型动态调控洗矿机矿浆浓度，在最大化处理量的同时，彻底阻断微细粒金进入尾矿流失。",
+        card3_title: "燃油审计与异常消耗溯源",
+        card3_desc: "对现场理论运动学油耗与油库实际加油记录进行实时交叉核验，精准定位非正常路线偏差、管道泄漏及未授权燃油损耗。",
+        card4_title: "离线工业级边缘计算节点",
+        card4_desc: "采用高安全性Docker容器化部署的本地边缘计算一体机，专为无卫星、无移动信号的偏远热带雨林及安第斯矿区营地打造。",
+        card5_title: "砂金开采物理专家系统",
+        card5_desc: "融合砂金矿石松散系数、泥泞道路滚动阻力系数及重型机械实际完好率的确定性工程决策逻辑。",
+        card6_title: "高频遥测与机器学习底座",
+        card6_desc: "具备时序空间数据处理能力的工业数据底座，支持接入高频GPS遥测数据，为本地化机器学习异常行为识别模型提供坚实支撑。",
         notice_title: "部署说明：",
         notice_desc: "AURIMAC™ 仅通过本地专用工业硬件一体机部署及现场工程诊断服务交付。",
         notice_cta: "申请现场技术审计 →"
@@ -268,11 +362,17 @@
       document.getElementById('card2-desc').textContent = t.card2_desc;
       document.getElementById('card3-title').textContent = t.card3_title;
       document.getElementById('card3-desc').textContent = t.card3_desc;
+      document.getElementById('card4-title').textContent = t.card4_title;
+      document.getElementById('card4-desc').textContent = t.card4_desc;
+      document.getElementById('card5-title').textContent = t.card5_title;
+      document.getElementById('card5-desc').textContent = t.card5_desc;
+      document.getElementById('card6-title').textContent = t.card6_title;
+      document.getElementById('card6-desc').textContent = t.card6_desc;
       document.getElementById('notice-title').textContent = t.notice_title;
       document.getElementById('notice-desc').textContent = t.notice_desc;
       document.getElementById('notice-cta').textContent = t.notice_cta;
 
-      // Update button styling
+      // Update switcher active states
       ['en', 'es', 'zh'].forEach(l => {
         const btn = document.getElementById(`lang-btn-${l}`);
         if (l === lang) {
@@ -285,7 +385,7 @@
       localStorage.setItem('aurimac_lang', lang);
     }
 
-    // Auto-detect language on load
+    // Zero-latency language initialization
     document.addEventListener('DOMContentLoaded', () => {
       const savedLang = localStorage.getItem('aurimac_lang');
       if (savedLang && translations[savedLang]) {
