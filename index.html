@@ -234,6 +234,27 @@
     </div>
 
     <!-- Institutional Deployment Notice -->
+    <!-- Command Center Preview Section -->
+    <div class="mt-20 lg:mt-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+      <div class="lg:col-span-5 space-y-6 order-2 lg:order-1">
+        <h2 id="preview-title" class="text-2xl sm:text-3xl font-bold text-white tracking-wide font-heading leading-tight">
+          Tactical Command & Reconciliation Dashboard
+        </h2>
+        <p id="preview-desc" class="text-sm sm:text-base text-gray-400 leading-relaxed font-light">
+          Transform raw kinematic data into executive financial clarity. The offline edge interface provides real-time Gross-to-Net cash bridges, deterministic fuel audits, and dynamic fleet allocation without requiring cloud connectivity.
+        </p>
+      </div>
+      <div class="lg:col-span-7 relative group order-1 lg:order-2">
+        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600/20 to-amber-500/20 rounded-xl blur-lg opacity-50 group-hover:opacity-100 transition duration-500"></div>
+        <img 
+          src="Aurimac_dashboard_1200_x_637.png" 
+          alt="AURIMAC Dashboard Interface" 
+          class="relative w-full rounded-xl border border-gray-700/80 shadow-2xl ring-1 ring-white/10 object-cover"
+        >
+      </div>
+    </div>
+
+    <!-- Institutional Deployment Notice -->
     <div class="mt-12 p-6 rounded-xl bg-gray-900/60 border border-gray-800 text-xs sm:text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
       <div>
         <span id="notice-title" class="font-semibold text-white uppercase tracking-wider block sm:inline">Deployment Notice: </span>
@@ -283,6 +304,8 @@
         card5_desc: "Deterministic physical decision logic incorporating alluvial swell factors, rolling resistance in muddy haul roads, and equipment mechanical availability bounds.",
         card6_title: "Telemetry & Machine Learning Ready",
         card6_desc: "Industrial time-series spatial infrastructure architected to ingest high-frequency GPS telemetry and train localized Machine Learning models for behavioral anomaly detection.",
+        preview_title: "Tactical Command & Reconciliation Dashboard",
+        preview_desc: "Transform raw kinematic data into executive financial clarity. The offline edge interface provides real-time Gross-to-Net cash bridges, deterministic fuel audits, and dynamic fleet allocation without requiring cloud connectivity.",
         notice_title: "Deployment Notice: ",
         notice_desc: "AURIMAC™ is deployed exclusively via on-premises edge appliances and specialized industrial engineering audits.",
         notice_cta: "Request Technical Audit →"
@@ -309,6 +332,8 @@
         card5_desc: "Lógica determinística que integra factores de esponjamiento de grava aluvial, resistencia a la rodadura en barro y disponibilidad mecánica real de los equipos.",
         card6_title: "Base para Telemetría y Machine Learning",
         card6_desc: "Infraestructura espacial de series de tiempo preparada para ingestar telemetría GPS continua y entrenar modelos locales de Machine Learning para detección de anomalías.",
+        preview_title: "Tablero de Comando Táctico y Conciliación",
+        preview_desc: "Transforme datos cinemáticos crudos en claridad financiera ejecutiva. La interfaz local provee puentes de liquidez en tiempo real, auditorías determinísticas de combustible y asignación dinámica de flota sin requerir conexión a la nube.",
         notice_title: "Aviso de Despliegue: ",
         notice_desc: "AURIMAC™ se instala exclusivamente mediante hardware industrial local y auditorías especializadas de ingeniería en planta.",
         notice_cta: "Solicitar Auditoría Técnica →"
@@ -335,6 +360,8 @@
         card5_desc: "融合砂金矿石松散系数、泥泞道路滚动阻力系数及重型机械实际完好率的确定性工程决策逻辑。",
         card6_title: "高频遥测与机器学习底座",
         card6_desc: "具备时序空间数据处理能力的工业数据底座，支持接入高频GPS遥测数据，为本地化机器学习异常行为识别模型提供坚实支撑。",
+        preview_title: "战术指挥与数据核算控制台",
+        preview_desc: "将原始运动学数据转化为高管级财务洞察。离线边缘终端提供实时的毛利至净利现金桥分析、确定性燃油审计及动态车队调度，完全无需云端网络连接。",
         notice_title: "部署说明：",
         notice_desc: "AURIMAC™ 仅通过本地专用工业硬件一体机部署及现场工程诊断服务交付。",
         notice_cta: "申请现场技术审计 →"
@@ -366,6 +393,8 @@
       document.getElementById('card5-desc').textContent = t.card5_desc;
       document.getElementById('card6-title').textContent = t.card6_title;
       document.getElementById('card6-desc').textContent = t.card6_desc;
+      document.getElementById('preview-title').textContent = t.preview_title;
+      document.getElementById('preview-desc').textContent = t.preview_desc;
       document.getElementById('notice-title').textContent = t.notice_title;
       document.getElementById('notice-desc').textContent = t.notice_desc;
       document.getElementById('notice-cta').textContent = t.notice_cta;
